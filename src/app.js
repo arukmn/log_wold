@@ -45,6 +45,12 @@ let WordCountBox = ({ txt, onChange }) => {
     </div>
   );
 };
+
+WordCountBox.propTypes = {
+  txt: React.PropTypes.string.isRequired,
+  onChange: React.PropTypes.func,
+};
+
 WordCountBox = connect(mapStateToProps, mapDispatchToProps)(WordCountBox);
 
 ReactDOM.render(
