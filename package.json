@@ -1,10 +1,12 @@
 {
-  "name": "the-world",
-  "version": "0.0.0",
+  "name": "log-wold",
+  "version": "0.1.0",
   "description": "",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "$(npm bin)/browserify -t babelify -o public/bundle.js src/index.js",
+    "watch": "$(npm bin)/watchify -v -t babelify -o public/bundle.js -d src/index.js",
+    "lint":  "$(npm bin)/eslint src test"
   },
   "keywords": [],
   "author": "arukmn",
