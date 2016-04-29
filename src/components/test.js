@@ -1,23 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { createStore } from 'redux';
-import { Provider, connect } from 'react-redux';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { createStore } from 'redux'
+import { Provider, connect } from 'react-redux'
 
 // Reducer has the interface `(state, action) => state`
-const text = (state = { text: '' }, action) => {
+const count = (state = { text: '' }, action) => {
   switch (action.type) {
     case 'UPDATE_TEXT':
-      return { text: action.text };
+      return { text: action.text }
     default:
-      return state;
+      return state
   }
-};
+}
 
 const mapStateToProps = (state) => {
   return {
     text: state.text,
-  };
-};
+  }
+}
 
 const mapDispatchToProps = (dispatch) => {
   return {
@@ -25,10 +25,10 @@ const mapDispatchToProps = (dispatch) => {
       type: 'UPDATE_TEXT',
       text: e.target.value,
     }),
-  };
-};
+  }
+}
 
-let WordCountBox = ({ txt, onChange }) => {
+let WordCountBox = ({ text, onChange }) => {
   return (
     <div className="wordCountBox">
       <h1>Hello, Redux!</h1>
@@ -39,23 +39,23 @@ let WordCountBox = ({ txt, onChange }) => {
         autoFocus="true"
         onChange={onChange}
       >
-        {txt}
+        {text}
       </textarea>
       <p>Count: {text.length}</p>
     </div>
-  );
-};
+  )
+}
 
 WordCountBox.propTypes = {
-  txt: React.PropTypes.string.isRequired,
+  text: React.PropTypes.string.isRequired,
   onChange: React.PropTypes.func,
-};
+}
 
-WordCountBox = connect(mapStateToProps, mapDispatchToProps)(WordCountBox);
+WordCountBox = connect(mapStateToProps, mapDispatchToProps)(WordCountBox)
 
 ReactDOM.render(
-  <Provider store={createStore(text)}>
+  <Provider store={createStore(count)}>
     <WordCountBox />
   </Provider>,
-  document.getElementById('content')
-);
+  document.getElementById('counter')
+)
