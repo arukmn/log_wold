@@ -1,0 +1,37 @@
+[login]
+ログイン画面
+==> top
+
+[top]
+トップ画面
+--
+カレンダーの日付を選択
+==> apply_schedule
+お知らせ
+==> notification
+(管理者向け)承認画面への遷移
+==> acception
+設定ボタンを押下
+==> setting
+履歴
+==> history
+稼働率を算出(基本、全ユーザーに自動✔)
+==> export
+
+[notification]
+管理者からユーザーに知らせたい内容を掲載
+
+[acception]
+リスト形式で承認待ちの予定が表示
+
+[setting]
+設定画面
+--
+申請が完了した時に送信先の設定
+==> update destination
+この日は予定が入っていて別の予定を入れられないと示す
+==> add NG schedule
+
+
+[history]
+一ヶ月毎に自分の作業量を客観的に表示
