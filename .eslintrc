@@ -1,10 +1,15 @@
 {
+  "parser": "babel-eslint",
   "extends": "airbnb",
+  "env": {
+    "es6": true,
+    "browser": true
+  },
   "plugins": [
     "react"
   ],
   "rules": {
-    "arrow-body-style": "off",
-    "semi": [2, "never"]
+    "semi" : [2 , "never"],
+    "indent": ["error", 2],
   }
 }
