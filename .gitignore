@@ -1,5 +1,5 @@
+public/bundle.js
 node_modules/*
 !node_modules/src
 !node_modules/test
 lib/*
-public/bundle.js
