@@ -40,6 +40,16 @@ store.dispatch(toggleTodo(0))
 console.log(setVisibilityFilter)
 // store.dispatch(setVisibilityFilter('SHOW_COMPLETED'))
 
+const arukmn = async () => {
+  const result = await new Promise(resolve => {
+    setTimeout(() => { resolve('arukmn') }, 5000)
+  })
+
+  console.log(`result ${result}`)
+}
+arukmn()
+
+
 injectTapEventPlugin()
 
 const App = () => (
