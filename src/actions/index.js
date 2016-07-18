@@ -15,3 +15,26 @@ export const setVisibilityFilter = filter => ({
   type: 'SET_VISIBILITY_FILTER',
   filter,
 })
+
+/* ポップアップのオープン */
+export const newShift = ownProps => ({
+  type: 'NEW_SHIFT',
+  ownProps,
+})
+
+/* ポップアップのクローズ */
+export const closeShift = () => ({
+  type: 'CLOSE_SHIFT',
+})
+
+/* 新規シフト申請 */
+export const createShift = param => ({
+  type: 'CREATE_SHIFT',
+  param,
+})
+
+/* ステップ移動 */
+export const updateStep = ownProps => ({
+  type: 'UPDATE_STEP',
+  ownProps,
+})

@@ -11,5 +11,6 @@
   "rules": {
     "semi" : [2 , "never"],
     "indent": ["error", 2],
+    "import/no-unresolved": 0,
   }
 }
