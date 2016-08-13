@@ -33,8 +33,13 @@ export const createShift = param => ({
   param,
 })
 
-/* ステップ移動 */
-export const updateStep = ownProps => ({
-  type: 'UPDATE_STEP',
-  ownProps,
+
+export const beforeUsage = stepIndex => ({
+  type: 'BEFORE_USAGE',
+  stepIndex,
+})
+
+export const nextUsage = stepIndex => ({
+  type: 'NEXT_USAGE',
+  stepIndex,
 })

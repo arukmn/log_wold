@@ -1,7 +1,7 @@
 import React from 'react'
 import { Table, TableBody, TableHeader, TableHeaderColumn, TableRow }
 from 'material-ui/Table'
-import AttendanceRow from 'components/AttendanceRow'
+import AttendanceRow from 'components/AttendanceRow.jsx'
 
 // 何故かAttendanceRowで別のコンポーネント化すると大抵の処理が動作しなくなる
 const dummy = [
@@ -19,6 +19,8 @@ const test = (clickRowIdxs) => {
   console.log(JSON.stringify(clickData, null, '\t'))
 }
 
+// この箇所はcontainerからイベントを渡すようにして、
+// 他の箇所でもボタン押下時の挙動を変更出来るようにする
 const modalTest = (clickRowId) => {
   console.log(JSON.stringify(clickRowId))
 }

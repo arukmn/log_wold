@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react'
 import { List } from 'material-ui/List'
 import Subheader from 'material-ui/Subheader'
-import Todo from './Todo'
+import Todo from './Todo.jsx'
 
 // VisibleTodoListのtodosオブジェクトと名前を合わせる必要あり？
 const TodoList = ({ todos, onTodoClick }) => (

@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react'
 import FloatingActionButton from 'material-ui/FloatingActionButton'
 import ContentAdd from 'material-ui/svg-icons/content/add'
-import NewShiftDialog from 'components/NewShiftDialog'
+import NewShiftDialog from 'components/NewShiftDialog.jsx'
 
 const fabStyle = {
   position: 'fixed',

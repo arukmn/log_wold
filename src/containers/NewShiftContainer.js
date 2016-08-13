@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import NewShiftButton from 'components/NewShiftButton'
+import NewShiftButton from 'components/NewShiftButton.jsx'
 import { newShift, closeShift } from 'actions/'
 
 const mapStateToProps = state => {
