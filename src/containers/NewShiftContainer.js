@@ -7,7 +7,7 @@ const mapStateToProps = state => {
   console.log(`NewShiftContainer::mapStateToProps: ${JSON.stringify(state)}`)
 
   return {
-    showNewShiftDialog: state.shift,
+    showNewShiftDialog: state.shift.isDialogOpen,
   }
 }
 

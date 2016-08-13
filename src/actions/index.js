@@ -33,6 +33,11 @@ export const createShift = param => ({
   param,
 })
 
+export const openShift = id => ({
+  type: 'OPEN_SHIFT',
+  id,
+})
+
 
 export const beforeUsage = stepIndex => ({
   type: 'BEFORE_USAGE',

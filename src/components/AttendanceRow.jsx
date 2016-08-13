@@ -1,6 +1,8 @@
 import React, { PropTypes } from 'react'
 import { TableRow, TableRowColumn } from 'material-ui/Table'
 import RaisedButton from 'material-ui/RaisedButton'
+// import NewShiftDialog from 'components/NewShiftDialog.jsx'
+// <NewShiftDialog props={{ showNewShiftDialog, closeNewShiftDialog }} />
 
 const AttendanceRow = ({ id, name, status, onClick }) => (
   <TableRow>
