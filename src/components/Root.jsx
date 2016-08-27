@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react'
 import AppBar from 'material-ui/AppBar'
 import { Card } from 'material-ui/Card'
-import label from 'settings/label.json'
+import LABEL from 'settings/label.json'
 
 import NewShiftContainer from 'containers/NewShiftContainer'
 import TableExampleSimple from './AttendanceTable.jsx'
@@ -14,13 +14,15 @@ import VisibleTodoList from 'containers/VisibleTodoList'
 import Footer from 'components/Footer.jsx'
 import AddTodo from 'containers/AddTodo'
 
+import { Link } from 'react-router'
 
 const Root = () => (
   <div>
     <AppBar
-      title={label.APP}
+      title={LABEL.APP}
       showMenuIconButton={false}
     />
+    <Link to="/foo">Login</Link>
     <Notification />
     <Usage />
     <NewShiftContainer />

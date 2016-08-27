@@ -1,6 +1,6 @@
 {
-  "name": "log-wold",
-  "version": "0.1.0",
+  "name": "kuriOpe",
+  "version": "0.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -32,22 +32,21 @@
     "watchify": "^3.7.0"
   },
   "dependencies": {
-    "axios": "^0.12.0",
     "babel-plugin-module-alias": "^1.5.0",
     "babel-plugin-transform-runtime": "^6.9.0",
     "co": "^4.6.0",
     "material-ui": "^0.15.0",
     "react": "^15.0.1",
     "react-dom": "^15.0.1",
-    "react-infinite-calendar": "^1.1.14",
     "react-redux": "^4.4.5",
     "react-router": "^2.5.2",
     "react-router-redux": "^4.0.5",
     "react-tap-event-plugin": "^1.0.0",
     "redux": "^3.5.2",
+    "redux-actions": "^0.10.1",
     "redux-devtools": "^3.3.1",
+    "redux-localstorage": "^0.4.1",
     "redux-logger": "^2.6.1",
-    "redux-promise": "^0.5.3",
-    "redux-thunk": "^2.1.0"
+    "redux-saga": "^0.11.0"
   }
 }

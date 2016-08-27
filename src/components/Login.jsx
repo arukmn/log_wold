@@ -1,21 +1,26 @@
 import React from 'react'
 import Paper from 'material-ui/Paper'
+import TextField from 'material-ui/TextField'
+import Divider from 'material-ui/Divider'
+import RaisedButton from 'material-ui/RaisedButton'
+import LABEL from 'settings/label.json'
+import setting from 'settings/setting'
 
-const style = {
-  height: 100,
-  width: 100,
-  margin: 20,
-  textAlign: 'center',
-  display: 'inline-block',
-}
-
+const style = setting.pages.login
 const Login = () => (
-  <div>
-    <Paper style={style} zDepth={1} />
-    <Paper style={style} zDepth={2} />
-    <Paper style={style} zDepth={3} />
-    <Paper style={style} zDepth={4} />
-    <Paper style={style} zDepth={5} />
+  <div style={style.context}>
+    <span style={style.title}>{LABEL.APP}</span>
+    <Paper zDepth={5}>
+      <TextField hintText="ID" style={style.textField} underlineShow={false} />
+      <Divider />
+      <TextField hintText="PASS" type="password" style={style.textField} underlineShow={false} />
+      <Divider />
+    </Paper>
+    <RaisedButton
+      label="Login"
+      primary
+      onMouseDown={() => console.log('clicked login button')}
+    />
   </div>
 )
 
